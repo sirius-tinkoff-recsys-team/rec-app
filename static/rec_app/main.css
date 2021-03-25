@@ -1,0 +1,23 @@
+.item {
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 250px;
+    min-height: 300px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: rgba(72, 161, 230, 0.14) 0 0 20px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #cce5ff;
+    transition-duration: 0.3s;
+}
+
+.item-select{
+    background-color: aquamarine;
+}
+
+.id-span{
+    width:100px; word-wrap:break-word; display:inline-block;
+}

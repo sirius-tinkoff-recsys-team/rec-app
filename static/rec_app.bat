@@ -1,0 +1,1 @@
+npx babel --watch rec_app/src --out-dir rec_app --presets react-app/prod

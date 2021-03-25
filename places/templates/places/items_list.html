@@ -1,0 +1,17 @@
+{%  load static %}
+
+<div id="places">
+
+</div>
+{%  csrf_token %}
+<script src="{%  static 'rec_app/main.js' %}"></script>
+<script>
+    var token = $('input[name=csrfmiddlewaretoken]').val();
+    var items = {{ items|safe }};
+        /*[{"loc_id":77, "url":"www.anylearn.ru"},
+                    {"loc_id":13, "url":"mail.ru"},
+                    ]*/
+	ReactDOM.render(React.createElement(ItemWrap,
+      {items:items}),
+			document.getElementById('places'));
+</script>
